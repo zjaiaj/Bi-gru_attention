@@ -20,7 +20,7 @@ NUM_EPOCHS = 3  # Model easily overfits without pre-trained words embeddings, th
 DELTA = 0.5
 MODEL_PATH = './model'
 
-(X_train, y_train), (X_test, y_test) = imdb.load_data(path="D:/kesai/textmining/data/imdb.npz",
+(X_train, y_train), (X_test, y_test) = imdb.load_data(path="./data/imdb.npz",
                                                       num_words=NUM_WORDS, index_from=INDEX_FROM)
 
 vocabulay_size = get_vocabulary_size(X_train)
